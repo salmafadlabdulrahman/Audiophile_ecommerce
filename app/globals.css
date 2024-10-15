@@ -7,3 +7,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.nav-items a:hover {
+  color: #d87d4a;
+}

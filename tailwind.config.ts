@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         black: '#191919',
+        orange: '#d87d4a'
       },
     },
   },
