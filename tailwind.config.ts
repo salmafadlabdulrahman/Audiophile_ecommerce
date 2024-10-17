@@ -13,7 +13,12 @@ const config: Config = {
         orange: '#d87d4a',
         gray: '#f1f1f1'
       },
+      screens: {
+        'xs': '200px',
+      }
     },
+
+    
   },
   plugins: [],
 };

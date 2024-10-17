@@ -33,6 +33,7 @@ const Navbar = () => {
               width={"15"}
               height={"15"}
               onClick={displaySidebar}
+              className="md:hidden"
             />
           )}
           <Link href={"/"}>
@@ -60,7 +61,7 @@ const Navbar = () => {
         </div>
       </nav>
       {openSidebar && (
-        <div className="bg-white">
+        <div className="bg-white pb-[4em] h-full md:hidden flex xs:flex-col sm:flex-row justify-center gap-5 ">
           {allCategories.map((category, i) => (
             <div key={i}>
               <SidebarCategory
