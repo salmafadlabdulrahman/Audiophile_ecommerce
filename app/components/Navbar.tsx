@@ -4,14 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import SidebarCategory from "./SidebarCategory";
+import { allCategories } from "@/functions";
 
 const Navbar = () => {
-  const [openSidebar, setOpenSidebar] = useState(false);
+  const [openSidebar, setOpenSidebar] = useState(true);
 
   const displaySidebar = () => {
     setOpenSidebar((val) => !val);
   };
-  console.log(openSidebar);
+
   return (
     <>
       <nav className="bg-black px-8">
@@ -26,7 +27,13 @@ const Navbar = () => {
               onClick={displaySidebar}
             />
           ) : (
-            <Image src="/assets/shared/mobile/icon-close-menu.svg" alt="close icon" width={"15"} height={"15"} onClick={displaySidebar} />
+            <Image
+              src="/assets/shared/mobile/icon-close-menu.svg"
+              alt="close icon"
+              width={"15"}
+              height={"15"}
+              onClick={displaySidebar}
+            />
           )}
           <Link href={"/"}>
             <Image
@@ -54,7 +61,14 @@ const Navbar = () => {
       </nav>
       {openSidebar && (
         <div className="bg-white">
-          <SidebarCategory />
+          {allCategories.map((category, i) => (
+            <div key={i}>
+              <SidebarCategory
+                category={category.categorie}
+                image={category.image}
+              />
+            </div>
+          ))}
         </div>
       )}
     </>
