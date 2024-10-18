@@ -11,7 +11,8 @@ const config: Config = {
       colors: {
         black: '#191919',
         orange: '#d87d4a',
-        gray: '#f1f1f1'
+        gray: '#f1f1f1',
+        darkgray: '#ffffff80',
       },
       screens: {
         'xs': '200px',

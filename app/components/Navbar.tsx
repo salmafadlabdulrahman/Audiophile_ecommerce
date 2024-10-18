@@ -7,7 +7,7 @@ import SidebarCategory from "./SidebarCategory";
 import { allCategories } from "@/functions";
 
 const Navbar = () => {
-  const [openSidebar, setOpenSidebar] = useState(true);
+  const [openSidebar, setOpenSidebar] = useState(false);
 
   const displaySidebar = () => {
     setOpenSidebar((val) => !val);
@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-black px-8">
-        <div className="flex items-center justify-between border-b-2 border-[#c9c9c9] py-8 md:max-w-[90%] lg:max-w-[80%] md:m-auto">
+        <div className="flex items-center justify-between border-b-[1px] border-[#8a8a8a] py-8 md:max-w-[90%] lg:max-w-[80%] md:m-auto">
           {!openSidebar ? (
             <Image
               src="/assets/shared/mobile/icon-hamburger.svg"
