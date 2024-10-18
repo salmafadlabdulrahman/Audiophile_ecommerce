@@ -13,7 +13,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="text-center absolute top-20 right-[50%] translate-x-[50%] md:translate-x-[0] m-auto md:static md:m-0 md:text-left md:pl-4">
+      <div className="sm:w-[90%] md:w-[60%] lg:w-[40%] text-center absolute  top-20 right-[50%] translate-x-[50%] md:translate-x-[0] m-auto md:static md:m-0 md:text-left md:pl-4">
         {" "}
         <h5 className="uppercase text-darkgray text-[15px] tracking-[10px]">
           New Product
@@ -22,7 +22,7 @@ const Hero = () => {
           XX99 Mark II
           <br /> headphones
         </h2>
-        <p className="text-darkgray m-auto mt-3 font-light tracking-tight text-[17px]  md:w-[350px] md:m-0 md:mt-3">
+        <p className="text-darkgray m-auto mt-3 font-light tracking-tight text-[17px] max-w-[350px] md:w-[350px] md:m-0 md:mt-3">
           Experience natural, lifelike audio and exceptional build quality made
           for the passionate music enthusiast.
         </p>

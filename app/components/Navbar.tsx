@@ -60,8 +60,9 @@ const Navbar = () => {
           />
         </div>
       </nav>
+
       {openSidebar && (
-        <div className="bg-white pb-[4em] h-full md:hidden flex xs:flex-col sm:flex-row justify-center gap-5 ">
+        <div className="bg-white pb-[4em] pt-[4em] h-full md:hidden flex xs:flex-col sm:flex-row justify-center gap-5 absolute top-35 left-0 w-full z-50 ">
           {allCategories.map((category, i) => (
             <div key={i}>
               <SidebarCategory
