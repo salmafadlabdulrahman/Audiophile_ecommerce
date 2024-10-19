@@ -17,7 +17,7 @@ const SidebarCategory = ({ category, image }: SidebarCategoryProps) => {
             alt="black headphones"
             className="relative m-auto z-10"
           />
-          <div className="bg-gray h-[160px] absolute top-[65px] left-[50%] translate-x-[-50%] rounded-lg xs:w-[80%] ">
+          <div className="bg-gray h-[160px] absolute top-[65px] left-[50%] translate-x-[-50%] rounded-lg xs:w-[80%]">
             <div className="mt-[5.5em]">
               <div className="text-center">
                 <h1 className="uppercase tracking-wide font-semibold">
