@@ -68,6 +68,9 @@ const Navbar = () => {
               <SidebarCategory
                 category={category.categorie}
                 image={category.image}
+                imgWidth={200}
+                imgHeight={200}
+                cardWidth="80%"
               />
             </div>
           ))}
