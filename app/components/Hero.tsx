@@ -16,7 +16,7 @@ const Hero = () => {
       <div className=" text-center absolute top-20 right-[50%] translate-x-[50%] md:translate-x-[0] m-auto md:static md:m-0 md:text-left md:pl-4">
         {" "}
         <h5 className="uppercase text-darkgray tracking-[10px]">New Product</h5>
-          <p className="uppercase text-white text-[2em] sm:text-[2.5em] md:text-[3em] break-words tracking-wider leading-[1.1em] font-semibold mt-5">
+          <p className="uppercase text-white text-[2em] sm:text-[2.5em] md:text-[3.5em] break-words tracking-wider leading-[1.1em] font-semibold mt-5">
             XX99 Mark II
             <br /> headphones
           </p>
@@ -33,5 +33,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-/*text-[2em] */
