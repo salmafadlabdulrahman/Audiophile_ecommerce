@@ -1,6 +1,6 @@
 import React from "react";
-import SidebarCategory from "./SidebarCategory";
-import { allCategories } from "@/functions";
+/*import SidebarCategory from "./SidebarCategory";
+import { allCategories } from "@/functions";*/
 
 const Categories = () => {
   return (
