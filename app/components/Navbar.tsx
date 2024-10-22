@@ -14,8 +14,8 @@ const Navbar = () => {
   };
 
   return (
-    <>
-      <nav className="bg-black px-8">
+    <div>
+      <nav className="bg-black px-8 z-50 relative">
         <div className="flex items-center justify-between border-b-[1px] border-[#8a8a8a] py-8 md:max-w-[90%] lg:max-w-[80%] md:m-auto">
           {!openSidebar ? (
             <Image
@@ -60,23 +60,24 @@ const Navbar = () => {
           />
         </div>
       </nav>
-
       {openSidebar && (
-        <div className="bg-white pb-[5em] pt-[4em] h-full md:hidden flex xs:flex-col sm:flex-row justify-center gap-5 absolute top-35 left-0 w-full z-50 ">
-          {allCategories.map((category, i) => (
-            <div key={i}>
-              <SidebarCategory
-                category={category.categorie}
-                image={category.image}
-                imgWidth={200}
-                imgHeight={200}
-                cardWidth="80%"
-              />
-            </div>
-          ))}
+        <div className=" ">
+          <div className="absolute top-0 bg-white z-40 flex flex-col sm:flex-row  justify-center items-center gap-2  h-[60%] w-full pt-[4em] rounded-b-lg   ">
+            {allCategories.map((category, i) => (
+              <div key={i}>
+                <SidebarCategory
+                  category={category.categorie}
+                  image={category.image}
+                  imgWidth={150}
+                  imgHeight={150}
+                  cardWidth="100%"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

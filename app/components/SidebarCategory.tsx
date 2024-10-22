@@ -11,16 +11,16 @@ interface SidebarCategoryProps {
 const SidebarCategory = ({ category, image, imgWidth, imgHeight, cardWidth }: SidebarCategoryProps) => {
   return (
     <>
-      <div className="mt-[3em]">
+      <div className="mt-[3em] h-full">
         <div className="relative">
           <Image
             src={image}
             height={imgHeight}
             width={imgWidth}
             alt="black headphones"
-            className="relative m-auto z-10 "
+            className="relative z-10"
           />
-          <div className={`bg-gray h-[160px] absolute top-[65px] left-[50%] translate-x-[-50%] rounded-lg xs:w-[${cardWidth}]`}>
+          <div className={`bg-gray h-[160px] w-full absolute top-[50px] left-[50%] translate-x-[-50%] rounded-lg xs:w-[${cardWidth}]`}>
             <div className="mt-[5.5em]">
               <div className="text-center">
                 <h1 className="uppercase tracking-wide font-semibold">
