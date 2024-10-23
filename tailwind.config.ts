@@ -15,7 +15,8 @@ const config: Config = {
         darkgray: '#ffffff80',
       },
       screens: {
-        'xs': '200px'
+        'xs': '200px',
+        'sm': '600px',
       }
     },
 
