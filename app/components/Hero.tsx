@@ -5,7 +5,7 @@ const Hero = () => {
         <h5 className="uppercase text-darkgray tracking-[7px] font-semibold text-[1em] pt-[9em]">
           New Product
         </h5>
-        <p className="uppercase text-white mt-5 text-[1.9em] font-semibold leading-[1.1em] ">
+        <p className="uppercase text-white mt-5 text-[2.7em] sm:text-[3em] font-semibold leading-[1.1em] ">
           XX99 Mark II <br />
           headphones
         </p>
